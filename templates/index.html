@@ -1,0 +1,49 @@
+CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+    </nav>
+    <section id="job-opportunities">
+        <h2>Job Opportunities</h2>
+        <p>Explore a wide range of job listings, including entry-level and senior roles across different industries. Filter by location, job type, and salary to find the perfect match for your skills and experience.</p>
+        <img src="{{ url_for('static', filename='images/istockphoto-157316792-1024x1024.jpg') }}" alt="Job Opportunities" class="section-image">
+    </section>
+
+    <section id="earn-rewards">
+        <h2>How to Earn Rewards</h2>
+        <p>Earn points for every job search, application, and job listing shared with your network. Redeem your points for rewards like gift cards, professional courses, and more.</p>
+        <img src="{{ url_for('static', filename='images/money-celebration-moment-stockcake.jpg') }}" alt="Earn Rewards" class="section-image">
+    </section>
+
+    <section id="company">
+        <h2>Company</h2>
+        <p>Our company is dedicated to connecting people with their dream jobs while offering rewarding experiences along the way. We have helped thousands of job seekers across the globe.</p>
+        <img src="{{ url_for('static', filename='images/busy-office-space-stockcake.jpg') }}" alt="Company" class="section-image">
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Access job search tips, resume templates, and career advice from industry experts to help you land your dream job faster.</p>
+        <img src="{{ url_for('static', filename='images/StockCake-Busy Trade Show_1726001625.jpg') }}" alt="Resources" class="section-image">
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>We are committed to transforming the job search process by gamifying it and helping job seekers make the most out of every opportunity.</p>
+        <img src="{{ url_for('static', filename='images/modern-office-space-stockcake.jpg') }}" alt="About Us" class="section-image">
+    </section>
+</body>
+</html>
+

@@ -4,7 +4,7 @@ Job Hunt Rewards is an innovative platform that gamifies the job search experien
 
 Visit the [Deployed Website](https://polite-pixie-bf82a7.netlify.app/#) to start your search today!
 
-![website Screenshot](images/screenshot.png)
+![website Screenshot](images/screenshot.png.jpeg)
 
 Introduction
 In today’s competitive job market, finding the right job can be daunting. Job Hunt Rewards changes the narrative by adding an element of fun through gamification. Users earn rewards for every job they apply for, for sharing listings with friends, and for successfully landing a job. This helps job seekers stay motivated and engaged while searching for new opportunities. 

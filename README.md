@@ -13,29 +13,63 @@ Explore the latest job openings, build your career, and get rewarded for every m
 
 Read more about the [Final Project Blog Article](https://polite-pixie-bf82a7.netlify.app/#).
 
-Installation
-To run this project locally, follow these steps:
+Technology Stack
+Frontend
 
-1. Clone the repository:
-   git clone https://github.com/Freddiecoder99/alx-portfolio-project.git
+HTML5
+CSS3
+Vanilla JavaScript
 
-cd alx-portfolio-project
+We chose to use core web technologies without additional frameworks to solidify our understanding of fundamental concepts and to ensure fast load times for our users.
+Backend
 
-2. Create and activate a virtual environment:
+Node.js
+Express.js
 
-On macOS/Linux:
-python3 -m venv venv
-source venv/bin/activate
+The backend is built on Node.js with Express.js as the web application framework. This choice was made due to Node.js's non-blocking I/O model, which allows for efficient handling of concurrent requests - a crucial factor for a platform that could potentially serve thousands of job seekers simultaneously.
+Database
 
-On Windows:
-python -m venv venv
-venv\Scripts\activate
+MongoDB
 
-3. Install the required dependencies:
-pip install -r requirements.txt
+For data persistence, we chose MongoDB, a NoSQL database that offers flexibility in data modeling and scalability. This choice allows us to easily adapt our data structure as the platform evolves.
+Project Structure
+Copyjobhunt/
+│
+├── frontend/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+│
+├── backend/
+│   ├── app.js
+│   ├── models/
+│   │   └── User.js
+│   └── routes/
+│       ├── auth.js
+│       └── jobs.js
+│
+├── .gitignore
+├── package.json
+└── README.md
+Setup and Installation
 
-4. Run the Flask application:
-python app.py
+Clone the repository:
+Copygit clone https://github.com/yourusername/jobhunt.git
+cd jobhunt
+
+Install dependencies:
+Copynpm install
+
+Set up MongoDB:
+
+Make sure MongoDB is installed and running on your system.
+The application will connect to mongodb://localhost:27017/jobhunt by default.
+
+
+Start the server:
+Copynode backend/app.js
+
+Open frontend/index.html in your web browser to access the application.
 
 Usage
 Once you are on the Job Hunt Rewards platform, you can:
@@ -45,17 +79,7 @@ Earn Rewards: Gain points for every job application, referral, and action on the
 Share Your Achievements: Show off your accomplishments by sharing them with your network and tracking your progress through the gamified interface.
 Stay engaged, and enjoy a rewarding job search experience!
 
-Contributing
-We welcome contributions from the community to improve Job Hunt Rewards! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-   git checkout -b feature-name
-3. Commit your changes:
-   git commit -m "Add new feature"
-4. Push to your forked repository:
-   git push origin feature-name
-5. Create a Pull Request to the main repository.
+We welcome contributions to the JobHunt platform. Please feel free to submit issues and pull requests.
 
 Please ensure your code follows the best practices and is well-documented.
 

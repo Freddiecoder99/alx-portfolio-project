@@ -211,7 +211,7 @@ ul li a:hover{
     height: 40px;
     background: black;
     border: none;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
@@ -243,7 +243,7 @@ ul li a:hover{
 }
 
 .liw{
-    padding-top: 15px;
+    padding-top: 05px;
     padding-bottom: 10px;
     color: black;
     text-align: center;
